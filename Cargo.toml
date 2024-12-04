@@ -17,6 +17,7 @@ categories = ["data-structures", "game-development", "parsing"]
 simdnbt = "0.6.0"
 thiserror = "1.0.61"
 serde = { version = "1.0", features = ["derive"], optional = true }
+based_mca = { package = "mca", version = "1.0.0" }
 
 [dev-dependencies]
 flate2 = "1.0.30"

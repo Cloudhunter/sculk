@@ -175,7 +175,7 @@ impl FromCompoundNbt for Chunk {
                 .lists()
                 .ok_or(SculkParseError::InvalidField("Lights".into()))?;
 
-            let mut lights_vec: Vec<Vec<i16>> = Vec::with_capacity(lights.len());
+            let mut lights_vec: Vec<Vec<i16>> = Vec::with_capacity(lights.clone().len());
 
             for light in lights {
                 let inner_lights = light
